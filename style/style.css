@@ -45,10 +45,12 @@ body {
 .attribution {
     /* font-size: 31px !important; */
     text-align: center;
+    font-weight: 700;
+    letter-spacing: .8px;
 }
 
 .attribution a {
-    color: #3e52a3;
+    color: var(--Neon-Green);
 }
 
 .equal {
