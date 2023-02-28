@@ -1,0 +1,94 @@
+@tailwind components;
+@tailwind base;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,300&display=swap');
+
+:root {
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+    --Font-size-quote: 28px;
+    --Family-Manrope: 'https: //fonts.google.com/specimen/Manrope';
+    --Weights: 800
+}
+
+@font-face {
+    font-family: Source;
+    src: url(../font/SourceSansPro-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+
+
+body {
+    background: var(--Dark-Blue);
+}
+
+.box {
+    background-color: var(--Dark-Grayish-Blue);
+    color: var(--Light-Cyan);
+}
+
+.box h4 {
+    color: var(--Neon-Green);
+}
+
+.attribution {
+    /* font-size: 31px !important; */
+    text-align: center;
+}
+
+.attribution a {
+    color: #3e52a3;
+}
+
+.equal {
+    writing-mode: vertical-lr;
+    font-weight: 800;
+    font-size: 2.4rem;
+    border-radius: 15px;
+}
+
+.neon{
+    background: var(--Neon-Green);
+    padding: 10px;
+}
+
+.neon:hover {
+    content: '';
+    position: absolute;
+    box-shadow: 0 0 10px var(--Neon-Green),
+        0 0 20px var(--Neon-Green),
+        0 0 30px var(--Neon-Green),
+        0 0 40px var(--Neon-Green);
+        /* 0 0 50px var(--Neon-Green),
+         0 0 60px var(--Neon-Green) */
+        /*0 0 70px var(--Neon-Green);
+        /* 0 0 80px var(--Neon-Green), */
+        /* 0 0 90px var(--Neon-Green),
+        0 0 100px var(--Neon-Green); */ 
+}
+
+.svg{
+    overflow: hidden;
+  }
+
+
+@media screen and (width < 640px) {
+    .box {
+        width: 85%;
+    }
+
+    .container {
+        margin: 0 2px 0 1px !important;
+    }
+}
