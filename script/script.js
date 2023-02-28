@@ -34,6 +34,6 @@ function fetchAdvice() {
 
 
 fetchAdvice();
-setInterval(fetchAdvice, 3000)
+setInterval(fetchAdvice, 12000)
 
 
