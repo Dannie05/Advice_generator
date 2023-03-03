@@ -82,15 +82,13 @@ body {
 
 .svg{
     overflow: hidden;
+    text-align: center !important;
   }
 
 
 @media screen and (width < 640px) {
     .box {
         width: 85%;
-    }
-
-    .container {
-        margin: 0 2px 0 1px !important;
-    }
+        min-height: 30%;
+    }    
 }
